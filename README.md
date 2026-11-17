@@ -8,7 +8,7 @@ Alpha 1S Studio connects a Python desktop application, Gemini, speech synthesis,
 
 **Linux desktop application · MIT licensed · Uses the original robot controller**
 
-![Alpha 1S Studio desktop interface](src/assets/studio-demo.png)
+![Alpha 1S Studio desktop interface](src/assets/studio-manufacturer-map.png)
 
 *Pose Studio: joint controls, pose capture and playback in the desktop application.*
 
