@@ -181,4 +181,4 @@ For bug reports, include OS/Python, hardware/firmware, the UI step and a redacte
 
 ## License and credits
 
-An independent community project integrating UBTECH Alpha 1S with the Gemini API. [MIT license](LICENSE) covers the project source and original assets. UBTECH and Gemini names belong to their respective owners. Import your robot's native actions from its card. Python/Tk, BlueZ, ALSA, eSpeak NG, LAME and optional keyring retain their respective licenses.
+An independent community project integrating UBTECH Alpha 1S with the Gemini API. [MIT license](LICENSE) covers the project source and original assets. The displayed Joint ID map is reproduced from the UBTECH Alpha 1S user manual and remains attributed to UBTECH. UBTECH and Gemini names belong to their respective owners. Import your robot's native actions from its card. Python/Tk, BlueZ, ALSA, eSpeak NG, LAME and optional keyring retain their respective licenses.
