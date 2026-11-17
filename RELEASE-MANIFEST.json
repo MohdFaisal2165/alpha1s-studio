@@ -1,0 +1,462 @@
+[
+  {
+    "path": "README.md",
+    "sha256": "fa5ad3a26646b217aff2944edbf6e73ad3386485deb970c2b6a40d5be1a7ce2d"
+  },
+  {
+    "path": "LICENSE",
+    "sha256": "102600c81f8b4f632f8083287535bc52daa567cb0504967aabf571558791cb98"
+  },
+  {
+    "path": "CHANGELOG.md",
+    "sha256": "7be5d611fe6c6fb131e169a154d2dcba7ed3bb78f2524122c6e8883e19534b3d"
+  },
+  {
+    "path": "CONTRIBUTING.md",
+    "sha256": "96bf54c14f2849109c7a5f340b999d413fef45ae9108eeda550cc8451b3fe4ed"
+  },
+  {
+    "path": "SECURITY.md",
+    "sha256": "9e28f42faec37f750c4f9b61d72af7f4282b2a9475d78709025d4b461c00b9c9"
+  },
+  {
+    "path": "THIRD_PARTY_NOTICES.md",
+    "sha256": "266ede448e0cabe62901d7d674bc4527148fd448ec90b7f5af1ba3edad7b8623"
+  },
+  {
+    "path": "pyproject.toml",
+    "sha256": "abc85438b98060514853c3288aadf74e309bc74a71de89c67b38ea4598d24073"
+  },
+  {
+    "path": ".gitignore",
+    "sha256": "e95db5866e35a5b0b7782965c76fd5bf7220f7a951b8fff41e9a96c1b05c999f"
+  },
+  {
+    "path": ".env.example",
+    "sha256": "97eea64ad8650d1c72d0257c7d56ffc58292ce0ce16e1e0dd6a34ca9d0b79fb1"
+  },
+  {
+    "path": "launch-control-panel.sh",
+    "sha256": "31eb21725ac9833ca6f53d0204751e87da439984990128955ae1ddc8d0782540"
+  },
+  {
+    "path": "alpha_demo/__init__.py",
+    "sha256": "92a14557ae0b06273e45fe4d09a5ff306b8f60e2e046fdfe695e9ed903f5542d"
+  },
+  {
+    "path": "alpha_demo/__main__.py",
+    "sha256": "1f59b3b66a4bebb0d661bc81af8f981029adf7d9e34f68c5687fbdb8c0659f84"
+  },
+  {
+    "path": "alpha_demo/action_library.py",
+    "sha256": "e7729376d6c72e699ff4f2e61bee0872c45143bd097c5e63638c6ba0b5e1ede8"
+  },
+  {
+    "path": "alpha_demo/audio_card.py",
+    "sha256": "d46aa9aad0ccee537ab3cc45dbb7aa5cd3ef23711a64f5ef46fc4d7c199a473e"
+  },
+  {
+    "path": "alpha_demo/bluetooth_transport.py",
+    "sha256": "75e87c9bb1833d7735dc1c0c704b4298ffeb0d2f4948b86b1f5d7be6568a7a84"
+  },
+  {
+    "path": "alpha_demo/card_check.py",
+    "sha256": "3905a0fe2d5c0815669f862e182e6496deb3c123d27c1b5b154a09598e1b3f12"
+  },
+  {
+    "path": "alpha_demo/card_cleanup.py",
+    "sha256": "4f441ec874fddd6018f05f58f239dfd5c5d6eb77b2dfd4d53751282b823f7617"
+  },
+  {
+    "path": "alpha_demo/card_import.py",
+    "sha256": "d2f3bdd67438c9de267fb9d62e4b46c2ef498e4d4c9b0d7d378b2b5695dabf92"
+  },
+  {
+    "path": "alpha_demo/config.py",
+    "sha256": "75cd3bd9914658b1098c490aeee400daf58c03283ecccf2d6c55823f0aa1e7ae"
+  },
+  {
+    "path": "alpha_demo/control_panel.py",
+    "sha256": "c98d9a7e4562e822f7f9029db56bde7f89c0ac90cd449c973583eb22c43ca92e"
+  },
+  {
+    "path": "alpha_demo/controller.py",
+    "sha256": "b5383f07632c08db0731f4273a1d780647c7c6d5cf5bca4b0df900b2114e0cbb"
+  },
+  {
+    "path": "alpha_demo/conversation_speech.py",
+    "sha256": "9e228fa1ac870b2bb0700a1ddf72638f7ed04868a59d5df772bd56cdd5fa52f9"
+  },
+  {
+    "path": "alpha_demo/credentials.py",
+    "sha256": "f64bbe36dd9ff944eb5ef18092064cbe716c23b7f4d504fb9725e9455d4bb69e"
+  },
+  {
+    "path": "alpha_demo/default_pose.py",
+    "sha256": "a212d2099a98ae3fcdb0cbe926dc226331d5506a4059bc4a0aff448db616f7eb"
+  },
+  {
+    "path": "alpha_demo/diagnostics.py",
+    "sha256": "a36ff9414dbf952e3e9940b1bb2194936f12537363e696198d33b2ab0ee3f8c9"
+  },
+  {
+    "path": "alpha_demo/elbow_read.py",
+    "sha256": "5c8435737e47ea2d376a677a6b535cd916aa9bd17f8273bb4b5881cd795079e8"
+  },
+  {
+    "path": "alpha_demo/elbow_return.py",
+    "sha256": "c830c4681d99d47434410294d2c712c465dbe40e1bb259f455da650dbdc5dc6b"
+  },
+  {
+    "path": "alpha_demo/elbow_trial.py",
+    "sha256": "af5846aa02d766d3ea36063126def66c8d6bb4b3b7da99c107f1725dd039d573"
+  },
+  {
+    "path": "alpha_demo/elbow_trial_45.py",
+    "sha256": "cbd37b8d3379b379472061db2f340b687d243e8a86577bc42260a0255960d409"
+  },
+  {
+    "path": "alpha_demo/elbows_position_check.py",
+    "sha256": "6e6cc77d5ba8ded6e6b4293b0a65ce986c6a635e5461015d8d8ffab88faf3ea7"
+  },
+  {
+    "path": "alpha_demo/expressive_voice.py",
+    "sha256": "b0ec7303f6533faa8a5485e0e6eeccbba8b32325a086ffe5ecadc0ec49ed9ca3"
+  },
+  {
+    "path": "alpha_demo/gemini.py",
+    "sha256": "1577c67d4ff0ba2be399567048da5f70f34ff56796b598854262e7179384294b"
+  },
+  {
+    "path": "alpha_demo/gemini_api.py",
+    "sha256": "107ad810d4d29a9f11ebd1df777d476bb8be36ea6f3dfcd3a7fae76dfa4f0e78"
+  },
+  {
+    "path": "alpha_demo/gestures.py",
+    "sha256": "3c7c31247b9ac850590ca7161f67e362d99f1f5cc2d639ce821fc18b5d00d9cf"
+  },
+  {
+    "path": "alpha_demo/greeting_panel.py",
+    "sha256": "fcf8d5ac9722faaff1d06c880f940b518bba0664cb626fa771a102b564bbeb2f"
+  },
+  {
+    "path": "alpha_demo/greetings.py",
+    "sha256": "9adbcc3751b4a3f78879176041ecf89b897c258675551d0291373a0a6a14bdd6"
+  },
+  {
+    "path": "alpha_demo/hold_speech.py",
+    "sha256": "f818573a3eb1a472e8e1d11a878968b6ad9488b8280c2e5474bf50e8619477d1"
+  },
+  {
+    "path": "alpha_demo/identify.py",
+    "sha256": "40638e0388951acef2a7ce29e6724b5e6dc19b00aeb85b67dc2927f3cb31e602"
+  },
+  {
+    "path": "alpha_demo/left_elbow_hold_trial.py",
+    "sha256": "18f8f071a84c802508f0dee57dea229774b300dbee0d7579580c692a8b0e3fde"
+  },
+  {
+    "path": "alpha_demo/motions.py",
+    "sha256": "bbae8d28261f5b3a14348acefcc386f8e8f8f12308557432003031f1d9e69779"
+  },
+  {
+    "path": "alpha_demo/motor_catalog.py",
+    "sha256": "21918d86dc1b330a6885d8313494b82100e6e6b33b0628283b56a40231f14c8a"
+  },
+  {
+    "path": "alpha_demo/paired_speech.py",
+    "sha256": "5bee7698df0adea32905915c9a5fd6c012676d5cbd1f9f9e06dbc02eb95b0054"
+  },
+  {
+    "path": "alpha_demo/panel_transport.py",
+    "sha256": "9202feed2624acf29fd4706c71c38252ad410a6014614b4d0e58b098c904c3d0"
+  },
+  {
+    "path": "alpha_demo/pose_greetings.py",
+    "sha256": "c90ea562b766aa9eba9e77e85d18d44be8ca354f7739f18a27db12cff1f917c8"
+  },
+  {
+    "path": "alpha_demo/recording_store.py",
+    "sha256": "9fa2d36d8ab4be4902fe8c045535b4d5380a94b67633c5a91482456ba55b1423"
+  },
+  {
+    "path": "alpha_demo/robot_speech.py",
+    "sha256": "47c7f8d8e1d4d729f1e8fecd152e62c4801c759b25528f81f497f9668dad94f0"
+  },
+  {
+    "path": "alpha_demo/search_sources.py",
+    "sha256": "71863db9d5a2591b16f89389dae1125d87b8d45701f4a66d984ef9c1ee7b8b2b"
+  },
+  {
+    "path": "alpha_demo/sector_patch.py",
+    "sha256": "af166a7fb6428e19d2ef2402bfb17f99aebaf027a7802858dd94cf963e1250b2"
+  },
+  {
+    "path": "alpha_demo/servo_status.py",
+    "sha256": "77e25ff440f52491c2051cbfac4df3c31ca0b628bc257c8ae4df65c9433958a6"
+  },
+  {
+    "path": "alpha_demo/servo_version.py",
+    "sha256": "55e324fa67dcb09cc8288d4d59d5bc7c98bcf9f8a1fb46f4f11305b9a26bc4a6"
+  },
+  {
+    "path": "alpha_demo/session_probe.py",
+    "sha256": "2628bc33e75ab777c8cc7d21a3866b743261855509a4d4605b3fd417f76f9781"
+  },
+  {
+    "path": "alpha_demo/session_probe_servo1.py",
+    "sha256": "199eefa42410214d754fbb6b92185b2214f26d683acf40683e3a387223b88c87"
+  },
+  {
+    "path": "alpha_demo/session_probe_servo2.py",
+    "sha256": "a9c8d7d4e8dbd6b1c73a28bbb32a27144e217a6970a7fd09860d9b8fe6c0bb06"
+  },
+  {
+    "path": "alpha_demo/speaker_probe.py",
+    "sha256": "c7153d1def34529ff7d3c7d57a1a8333b49898debb1af30954eb6f24b2d2e0db"
+  },
+  {
+    "path": "alpha_demo/speech.py",
+    "sha256": "ac9eef88d7d236e544f5a165f723bb5d7240dc31142d5b84a2b7b76b26c2e095"
+  },
+  {
+    "path": "alpha_demo/speech_panel.py",
+    "sha256": "54489b28a476d91dbb53ca9fa59d0a3b8b69e0b2ac6eb958fbf6a79658ea8364"
+  },
+  {
+    "path": "alpha_demo/speech_upload.py",
+    "sha256": "23bf98b815d88f1a2ba130bc5f898dfc587475303e736be824db82e8ef19bd3e"
+  },
+  {
+    "path": "alpha_demo/stop_playback.py",
+    "sha256": "4e75a81a96d1d91815c847a22e0f4f03178ae11a1359e5112c06867731c7ba39"
+  },
+  {
+    "path": "alpha_demo/storage_panel.py",
+    "sha256": "ebed7801a29203d2e395917757e2087a44e3041895d6d49c5a74287332763d94"
+  },
+  {
+    "path": "alpha_demo/teacher.py",
+    "sha256": "a8adc812ca7182486424bf54b45d3536fff52d4819d985baeeced0da9a1e76ee"
+  },
+  {
+    "path": "alpha_demo/teacher_panel.py",
+    "sha256": "5b51042a385a7f091495c96a4185ff9811da59f3b0844e6f21e1127292f71a9b"
+  },
+  {
+    "path": "alpha_demo/two_elbows.py",
+    "sha256": "423b2046e57693937d030ed14405d95719197bf02846fcb67b17f333e1b8d691"
+  },
+  {
+    "path": "alpha_demo/upload_session.py",
+    "sha256": "f715b33e51c1cbe6833da40b4560c33172fbc30a045c0eef0a2a390b3d587f22"
+  },
+  {
+    "path": "alpha_demo/upload_session_worker.py",
+    "sha256": "47a4f9567b7c017066599b8ab3545ff6e2647d033aca9de634236f085c1204e1"
+  },
+  {
+    "path": "tests/test_action_library.py",
+    "sha256": "12dc677d8e0e487e85b8f0e5fdd424e621b2822acd257e8f8b62a202ac2c66ae"
+  },
+  {
+    "path": "tests/test_bluetooth_transport.py",
+    "sha256": "2b70d7393955591c0998d1b00f6616302139cef67ea98608f665c50806f85924"
+  },
+  {
+    "path": "tests/test_card_check.py",
+    "sha256": "18da5f0e6e7b514749dc2470fd0b12ecf7226771bf7593982ae9b6cdf749db74"
+  },
+  {
+    "path": "tests/test_card_import.py",
+    "sha256": "db2d2a3f13439c176e8490d275ddec696f9120a04a7524d6e5116c0092c56c77"
+  },
+  {
+    "path": "tests/test_conversation_input.py",
+    "sha256": "bd43eefe8bd5e3c37ae5d3632a3910050c8e01a30b3fa54964d08b94690f1e75"
+  },
+  {
+    "path": "tests/test_conversation_speech.py",
+    "sha256": "6c6cd3d7af76f1e1fc2a7d0d02f6117969c0c1be6007cbadbdb62cb142cf59f6"
+  },
+  {
+    "path": "tests/test_credentials.py",
+    "sha256": "279fd5e1f0d908c7d62afea17e25ebf84ddf95bbd5a77431e6c987c1f5f50130"
+  },
+  {
+    "path": "tests/test_default_pose.py",
+    "sha256": "eb956e04cd5e7cba8d6f50c1fa78dd128bfb351a635a86ed7a166b85b7b798e0"
+  },
+  {
+    "path": "tests/test_delete_recordings.py",
+    "sha256": "8e394502950d643dc0f1c33fc84861f0928c00c4fed5b43d9d9c6b5f28d57ddb"
+  },
+  {
+    "path": "tests/test_elbow_trial.py",
+    "sha256": "f58b3a79706482cea0de94930cd7d5a38f47cefa4d07b111215c51b34df79686"
+  },
+  {
+    "path": "tests/test_gemini_quota.py",
+    "sha256": "cd5eb042f0e8bcd2ffa209a7d4cf06801489fc019c29a2ae2f0c7dc1a7907815"
+  },
+  {
+    "path": "tests/test_greeting_workflow.py",
+    "sha256": "18bb90c52bb8a23b4207b98abc72e5de8a792528673ca1fc1c8a87a1de0f8c02"
+  },
+  {
+    "path": "tests/test_greetings.py",
+    "sha256": "7fec47f5240e47173ca9b4abb035e6b2b0ec9f09895b446dbee5577dff7dd1bd"
+  },
+  {
+    "path": "tests/test_identify.py",
+    "sha256": "f78b83efa55b006a5162e8c5de5b7897856a848a0137564800adaf5e453705dd"
+  },
+  {
+    "path": "tests/test_paired_speech.py",
+    "sha256": "9a56ad50c16fabdd502fc8db3eaccebef1aca75db2063acf359433637838a3b8"
+  },
+  {
+    "path": "tests/test_panel_transport.py",
+    "sha256": "e96b953ebbcafa3357fd279a4f96f8b07bc16c860f0c5fe7c667f2f52792ec25"
+  },
+  {
+    "path": "tests/test_panel_ui.py",
+    "sha256": "85871d12320c79c5cc5d5fd05d46fe7cd9885dd34e12cad2491dae100184a401"
+  },
+  {
+    "path": "tests/test_pc_session.py",
+    "sha256": "43874db0d83f7cc7a576c8c09cd5ff2fd16239043d30c39671e8fe3529db1c4a"
+  },
+  {
+    "path": "tests/test_pose_greetings.py",
+    "sha256": "c9367d4f0f59e606a1e751c29b7f07a74d64052f48cedeeac6c6f3c52780f0fb"
+  },
+  {
+    "path": "tests/test_robot_speech.py",
+    "sha256": "b5c9335388e2e4a42ee66354d000b42e93e55c7afa982c58057a96f94847e55b"
+  },
+  {
+    "path": "tests/test_safety.py",
+    "sha256": "ae94add191c93e3bc1e7d4a1b2e5fa9c8fc0bac7642a6adddede230a46fba1cf"
+  },
+  {
+    "path": "tests/test_sector_patch.py",
+    "sha256": "1cd894e82a630ca62546de6614b38695ebfb64ea51e0f5618c05d5a67c2ba52d"
+  },
+  {
+    "path": "tests/test_servo_status.py",
+    "sha256": "d6130fda078f7a98017901d0add3df9614cf6b5d0e6610beff5c2c977897db76"
+  },
+  {
+    "path": "tests/test_speaker_probe.py",
+    "sha256": "073e9fe6be94d13d7d20e1b0909d02309638d4ca3a62ea1c67848b6abca54b69"
+  },
+  {
+    "path": "tests/test_speech.py",
+    "sha256": "01b6558084fcda80423c389810d24a92f175c747c1ddb2e3159aa2557c139c68"
+  },
+  {
+    "path": "tests/test_stop_playback.py",
+    "sha256": "103cf4db7dee4b312b3253b99395456d7dd7c65bf04262f967e3b44e5e228ead"
+  },
+  {
+    "path": "tests/test_teacher.py",
+    "sha256": "2268cb7c0310f2b7ad6d3734a02bde228d141ac416af91c06daa519016360273"
+  },
+  {
+    "path": "tests/test_upgrade_pipeline.py",
+    "sha256": "b13d150948f63e22b8356477fed594a16fd5c4ea9946a24fefafb923cca64700"
+  },
+  {
+    "path": "tests/test_upload_unmount.py",
+    "sha256": "2e48a259412eb980cb4fdca798c2cb7b5f224d108f0362e04d79f4203520bc9f"
+  },
+  {
+    "path": "docs/ACTION-LIBRARY.md",
+    "sha256": "da52d727c4c3a77cbc0954c4fa00e6eb2b8bec8b78530bdfd9285b64bbed4584"
+  },
+  {
+    "path": "docs/ARCHITECTURE.md",
+    "sha256": "4c201ea2c21b2fcd542bc45e7c8d6a47adc5aa8d45a607487e94af8141d4637b"
+  },
+  {
+    "path": "docs/AUDIO-TRANSPORT.md",
+    "sha256": "f6f8b8c6eef805e84043a4b813387b2d5d7c483435a176e80722f51747018dbc"
+  },
+  {
+    "path": "docs/DEMO.md",
+    "sha256": "d8acc0930453232ba9bbfb77baa290767526b6d979f8c25db39f7070d36494fb"
+  },
+  {
+    "path": "docs/RELEASE.md",
+    "sha256": "c7990a8104818d06ee2bf33940d295796145824fe203db5faa17215c3985ea27"
+  },
+  {
+    "path": "docs/SAFETY.md",
+    "sha256": "3d87f25d62cb459e7ee48cb77f9663f1bddd56b0f30e3b18d61f09d985f634ee"
+  },
+  {
+    "path": "docs/SETUP.md",
+    "sha256": "7f510c45782f4b8974087ae1fab87e9b830f3060ef98a69282c280052eee81b6"
+  },
+  {
+    "path": "docs/TROUBLESHOOTING.md",
+    "sha256": "2f83d8b851f9f21945d8fc2464c0ffb36e68bae96628d175745090c85fa93994"
+  },
+  {
+    "path": "docs/UPGRADE-TESTING.md",
+    "sha256": "5e84bb69c7e1e628e7b97022f08b9706c1bd48a8120202327e63fa3c661b49fb"
+  },
+  {
+    "path": "scripts/check_environment.py",
+    "sha256": "e6fa58483bd97a755cf60153e1900c140cc43c7e67972f5831fb869d353710f8"
+  },
+  {
+    "path": "scripts/close_studio_windows.py",
+    "sha256": "1af4dc625cbbfeb5499e009ed9168edb8e0ead02994908e791e0512858fb4e0d"
+  },
+  {
+    "path": "scripts/draw_joint_map.py",
+    "sha256": "362f8b0651a30a1ebc58b4fa18b669937192128d7c8a1e6599a0c0f6f5550653"
+  },
+  {
+    "path": "scripts/export_release.py",
+    "sha256": "da5e5ea4824b7d29a49b6968129baf9b57e728af891aa9878c92889a34fed8fb"
+  },
+  {
+    "path": "scripts/setup_robot.py",
+    "sha256": "07ecb480cd42b9ab045cca137cef3da6a94c359895ae4284527fb4bb7c6e66a6"
+  },
+  {
+    "path": ".github/ISSUE_TEMPLATE/bug_report.md",
+    "sha256": "ad235adaa7d2e3dc75be65e78d9d2bbc87123c738f03612e2e711b6507222271"
+  },
+  {
+    "path": ".github/pull_request_template.md",
+    "sha256": "82715a9c4ea144a79d4625125711b3cbb26b88e22a3e17052da3163401e6946a"
+  },
+  {
+    "path": ".github/workflows/tests.yml",
+    "sha256": "3963385db61228517dc22a3d3567b47591054d5bbeb3495711f9435b3a636707"
+  },
+  {
+    "path": "assets/joint-map.png",
+    "sha256": "c928e37e8191ec9a85b5ca0136f28b4f848184997850aa7faa35accd1b02edca"
+  },
+  {
+    "path": "data/.gitkeep",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "reports/.gitkeep",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "work/.gitkeep",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "backups/.gitkeep",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  }
+]
