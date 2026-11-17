@@ -39,4 +39,3 @@ The host application and protocol adapters translate validated requests into con
 - Investigate wireless fresh-audio transfer without assuming protocol support.
 - Treat custom embedded firmware or an external controller as a separate future project with documented design, hardware interfaces and validation.
 
-The next development phase follows the [simulation roadmap](SIMULATION.md).

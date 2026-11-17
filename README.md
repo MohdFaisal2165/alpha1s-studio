@@ -100,10 +100,6 @@ tests/            offline regression tests
 
 The download includes ready-made `data/`, `reports/`, `work/` and `backups/` folders. Setup and Studio populate them automatically, with generated contents kept local. Import native actions from your own robot card during setup.
 
-## Simulation development
-
-The next phase explores a calibrated Alpha 1S digital twin in Docker with NVIDIA Isaac Sim. See the [development plan](docs/SIMULATION.md) for model import, joint mapping, pose preview and supervised execution milestones.
-
 ## Development
 
 ```bash
