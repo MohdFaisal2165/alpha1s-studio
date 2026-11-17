@@ -1,13 +1,13 @@
 # Audio transport findings
 
-The desired flow is fresh question → fresh short answer → generated MP3 → built-in speaker. Short answers reduce the amount of audio transferred. They do not change the robot's available transport modes.
+The desired flow is fresh question → fresh short answer → generated MP3 → built-in speaker. Short answers reduce the amount of audio transferred. Studio uses USB for fresh uploads and Bluetooth for playback.
 
 ## Evidence
 
 - The manufacturer PC protocol defines F9/9F with mode 1 (USB disk), 2 (VCP), 3 (HID), and F3/3F named playback. This does not establish a way to deliver the HID mode-change packet while the device exposes only mass storage.
 - The reviewed manufacturer Bluetooth table documents named action playback, sound state and volume, but no ordinary MP3 upload operation. Bluetooth firmware update commands are not a safe substitute for audio transfer.
 - The development robot has successfully played an existing MP3 over Bluetooth using its full `MUSIC/<name>.MP3` path and a tested skip-reset mode. That mode is firmware-specific and is restored after playback.
-- New MP3 upload is implemented by identity-checked, journaled sector writes to the existing FAT32 card, followed by read-back verification. It is not a firmware update.
+- New MP3 upload is implemented by identity-checked, journaled sector writes to the existing FAT32 card, followed by read-back verification.
 - A live fresh-sentence test encountered a mounted card after the authorization handoff. The privileged helper now checks and unmounts only the verified robot card immediately before opening it exclusively; it never force-unmounts.
 - The subsequent upload verified successfully. USB playback was not acknowledged and the user clarified that no audio was heard. It must not be reported as a successful end-to-end conversation test.
 
@@ -27,4 +27,4 @@ If no supported native transfer or reconnect mechanism exists, fully wireless fr
 - [Gemini generateContent API](https://ai.google.dev/api/generate-content)
 - [Gemini audio input](https://ai.google.dev/gemini-api/docs/audio)
 
-Repository claims are research leads, not evidence that a command works on this robot. No third-party live motor routines were imported.
+Protocol references guide investigation; operator-confirmed tests establish behavior on the development robot.

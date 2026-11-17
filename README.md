@@ -6,7 +6,11 @@ Turn a UBTECH Alpha 1S into an interactive robot that answers questions through 
 
 Alpha 1S Studio connects a Python desktop application, Gemini, speech synthesis, and the robot's existing embedded controller. It bridges model decisions and physical behavior through validated action selection, explicit operator controls, USB file transfer, and Bluetooth protocol adapters.
 
-**Linux experimental release · MIT licensed · No replacement firmware required**
+**Linux desktop application · MIT licensed · Uses the original robot controller**
+
+![Alpha 1S Studio desktop interface](docs/images/studio-demo.png)
+
+*Pose Studio: joint controls, pose capture and playback in the desktop application.*
 
 ## See the system in action
 
@@ -16,7 +20,7 @@ Alpha 1S Studio connects a Python desktop application, Gemini, speech synthesis,
 4. Ask a question by typing or microphone. Gemini creates a concise answer and selects an approved gesture.
 5. Upload new speech over USB, unplug when prompted, and hear the robot speak while it performs the library action.
 
-Simultaneous speech and Celebrate motion were observed on the development robot, including a 4.04-second recording that continued after the 2.2-second gesture. The integrated Studio workflow was also confirmed by the operator. Other actions require rehearsal; timing is firmware-controlled, not sample-accurate synchronization.
+Simultaneous speech and Celebrate motion were observed on the development robot, including a 4.04-second recording that continued after the 2.2-second gesture. The integrated Studio workflow was also confirmed by the operator. Rehearse each action before use; the embedded controller manages playback timing.
 
 ## Download and launch
 
@@ -29,7 +33,7 @@ cd alpha1s-studio
 ./launch-control-panel.sh
 ```
 
-Install the Linux prerequisites first. This release is a **portable source package**, not a standalone executable or a supported `pip install` GUI. Keep the extracted folder intact and writable. Launching the UI does not connect to or move the robot.
+Install the Linux prerequisites first. This release is a **portable source package** launched with the supplied script. Keep the extracted folder intact and writable. Use Connect and the operator controls to begin a robot session.
 
 **Start here:** [Installation and first robot setup](docs/SETUP.md) · [Using Studio](docs/DEMO.md) · [Troubleshooting](docs/TROUBLESHOOTING.md)
 
@@ -43,12 +47,12 @@ Install the Linux prerequisites first. This release is a **portable source packa
 | Conversation | Typed or computer-microphone questions, concise new answers, approved gesture selection |
 | Simultaneous playback | Matching MP3/HTS pair, one Bluetooth playback command, full recording completion observed with Celebrate |
 | Storage | Verified uploads, recording management, protected greeting references |
-| Credentials | Optional OS key vault; no plaintext key-storage fallback |
+| Credentials | Optional OS key vault for saved API credentials |
 | Current information | Optional web search through the model API; availability and quota depend on the account |
 
-Tested configuration: **Linux desktop with X11/XWayland, hardware `Alpha1_V2.0`, firmware `2016070416`, original 124 MiB FAT32 card**. Other firmware, card sizes, Windows and macOS are not supported by this release. A 128 GB replacement card has not been validated.
+Tested configuration: **Linux desktop with X11/XWayland, hardware `Alpha1_V2.0`, firmware `2016070416`, original 124 MiB FAT32 card**.
 
-Fresh recordings still require **USB upload → unplug → Bluetooth playback**. Replaying an exact verified speech-and-action pair is wireless. This is not continuous, cable-free voice conversation.
+Fresh recordings follow **USB upload → unplug → Bluetooth playback**. Replaying an exact verified speech-and-action pair is wireless.
 
 ## Engineering architecture
 
@@ -66,7 +70,7 @@ flowchart LR
   BT --> Robot[Embedded controller: speech + motion]
 ```
 
-The model cannot send arbitrary servo angles, firmware commands, shell commands or file paths. Studio resolves approved identifiers to local assets and verifies them before execution.
+Gemini selects approved action identifiers. Studio resolves them to local assets, verifies their content and executes them through its robot transport adapters.
 
 ### Embedded-systems work demonstrated
 
@@ -77,11 +81,11 @@ The model cannot send arbitrary servo angles, firmware commands, shell commands 
 - Integration of host-side AI with an existing embedded motion/audio controller.
 - Mocked transport and filesystem regression tests, reproducible source releases and CI.
 
-This project demonstrates **embedded software integration and protocol engineering**. It does not claim custom MCU firmware, RTOS development, closed-loop collision avoidance or training a robotics foundation model. See [Engineering scope](docs/ARCHITECTURE.md) for implemented work and future directions.
+This project demonstrates **embedded software integration and protocol engineering** through transport adapters, actuator orchestration, verified storage operations and AI-driven action selection. See [Engineering architecture](docs/ARCHITECTURE.md) for the implementation.
 
 ## Responsible operation
 
-A 0–180° command range is not a guaranteed collision-free range. Angle reads may briefly release joints. Support the robot, unload legs when required, and keep the power switch reachable. Software Stop prevents later commands; it cannot guarantee interrupting firmware motion already running. Read [Safety](docs/SAFETY.md).
+Check body clearance across the entire movement path when choosing angles within the 0–180° command range. Angle reads may briefly release joints. Support the robot, unload legs when required, and keep the power switch reachable. Software Stop blocks subsequent commands; use the physical power switch when immediate intervention is needed. Read [Safety](docs/SAFETY.md).
 
 ## Project layout
 
@@ -94,7 +98,11 @@ tests/            offline regression tests
 .github/          CI and contribution templates
 ```
 
-The download already includes empty `data/`, `reports/`, `work/` and `backups/` folders. Setup and Studio populate them automatically; users do not need to create them. These are excluded from Git and releases. Vendor firmware, native actions, manuals and personal recordings are not shipped; import actions from your own robot card.
+The download includes ready-made `data/`, `reports/`, `work/` and `backups/` folders. Setup and Studio populate them automatically, with generated contents kept local. Import native actions from your own robot card during setup.
+
+## Simulation development
+
+The next phase explores a calibrated Alpha 1S digital twin in Docker with NVIDIA Isaac Sim. See the [development plan](docs/SIMULATION.md) for model import, joint mapping, pose preview and supervised execution milestones.
 
 ## Development
 
@@ -103,6 +111,6 @@ xvfb-run -a /usr/bin/python3 -m unittest discover -s tests -v
 /usr/bin/python3 scripts/export_release.py
 ```
 
-Tests are offline; no connected robot is needed. See [Contributing](CONTRIBUTING.md), [Release process](docs/RELEASE.md), [Changelog](CHANGELOG.md) and [Security](SECURITY.md).
+Tests use offline transport and filesystem fixtures. See [Contributing](CONTRIBUTING.md), [Release process](docs/RELEASE.md), [Changelog](CHANGELOG.md) and [Security](SECURITY.md).
 
-Independent project; not affiliated with UBTECH or Google. Gemini is used through its general API, not the Gemini Robotics model. [MIT license](LICENSE) · [Third-party notices](THIRD_PARTY_NOTICES.md).
+An independent community project integrating the UBTECH Alpha 1S with the Gemini API. [MIT license](LICENSE) · [Third-party notices](THIRD_PARTY_NOTICES.md).

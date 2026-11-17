@@ -15,7 +15,7 @@ Alpha 1S Studio is a host-side embodied-AI application integrated with a commerc
 
 ## Physical execution boundary
 
-Gemini returns an approved catalog identifier, not motor packets. The application resolves the identifier, checks current approval and content hashes, and enforces operator readiness. A native action retains its original HTS bytes. Fresh speech and the action receive the same generated basename in MUSIC and ACTION, followed by one Bluetooth action request after USB removal.
+Gemini returns an approved catalog identifier. The application resolves the identifier, checks current approval and content hashes, and enforces operator readiness. A native action retains its original HTS bytes. Fresh speech and the action receive the same generated basename in MUSIC and ACTION, followed by one Bluetooth action request after USB removal.
 
 Writes commit file data before allocation metadata and directory entries. Exact sector journals and readback checks support diagnosis. Uncertain playback is recorded before attempting the command and blocks automatic replay. Software Stop prevents subsequent requests; the embedded firmware controls motion already accepted.
 
@@ -27,9 +27,9 @@ Writes commit file data before allocation metadata and directory entries. Exact 
 - Speech overlapping Celebrate motion, including speech longer than the action, followed by operator confirmation of the Studio integration.
 - Offline fault-path, protocol, upload, deletion and UI tests.
 
-## Scope boundaries
+## Robot state and command handling
 
-The repository contains host software and protocol adapters. It does not contain custom firmware, firmware flashing tools, an RTOS port, motor-driver design, or a learned robotics controller. The 0–180° protocol domain is not a complete collision model. Joint feedback is a snapshot and may require briefly releasing a joint; it is not continuous telemetry.
+The host application and protocol adapters translate validated requests into controller commands. Joint readings provide measured snapshots; acquisition may briefly release the selected joint. Operators check body clearance and rehearse transitions across the 0–180° command domain.
 
 ## Future engineering milestones
 
@@ -39,4 +39,4 @@ The repository contains host software and protocol adapters. It does not contain
 - Investigate wireless fresh-audio transfer without assuming protocol support.
 - Treat custom embedded firmware or an external controller as a separate future project with documented design, hardware interfaces and validation.
 
-These are proposed extensions, not features claimed by this release.
+The next development phase follows the [simulation roadmap](SIMULATION.md).

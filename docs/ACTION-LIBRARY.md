@@ -6,7 +6,7 @@ Studio inspects HTS record framing, checksums, joint values and duration. The op
 
 For a new conversational reply, Studio copies the approved HTS unchanged and generates speech under a matching new basename. MP3 placement stays in the original MUSIC directory cluster; ACTION can use free slots in its existing chain. Neither directory is expanded. One Bluetooth command requests the new action after USB removal. This uses the firmware's matching-name action/music behavior.
 
-Observed on firmware `2016070416`: Celebrate lasted 2.2 seconds while a 4.04-second greeting overlapped and completed. The operator also confirmed the integrated Studio workflow. Other actions and their final postures need individual rehearsal. No exact synchronization guarantee is made.
+Observed on firmware `2016070416`: Celebrate lasted 2.2 seconds while a 4.04-second greeting overlapped and completed. The operator also confirmed the integrated Studio workflow. Other actions and their final postures need individual rehearsal. Playback timing is managed by the embedded controller.
 
 Exact accepted pairs may replay on an explicit request. Changed, deleted, unapproved or uncertain pairs cannot be reused. Saved greeting poses use the existing move-to-pose then speak workflow.
 
